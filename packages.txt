@@ -1,0 +1,38 @@
+# basics
+base
+linux
+linux-firmware
+sudo
+efibootmgr
+networkmanager
+intel-ucode
+polkit
+
+# useful tools
+git
+htop
+man
+mpv
+openssh
+ranger
+tree
+vim
+wget
+yt-dlp
+zsh
+
+# fluff
+cmatrix
+neofetch
+
+# awesome wm
+awesome
+ttf-dejavu
+rxvt-unicode
+vicious
+xorg-server
+xorg-xinit
+
+# gui apps
+code
+firefox
