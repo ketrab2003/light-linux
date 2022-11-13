@@ -1,11 +1,12 @@
 #!/bin/sh
 
+set -a
 export SETUP_DRIVE=/dev/sda
 export SETUP_USERNAME=ketrab
 export SETUP_PASSWORD=1
 export SETUP_LOCATION=/home/${SETUP_USERNAME}/system_config  # absolute path, in new filesystem
 
-exec ./setup_system.sh
+./setup_system.sh
 
 # copy all installation files to new system
 mkdir -p /mnt${SETUP_LOCATION}
@@ -18,7 +19,7 @@ arch-chroot /mnt /bin/bash <<EOF
 
   cd ${SETUP_LOCATION}
 
-  exec ./setup_awesome.sh
+  ./setup_awesome.sh
 EOF
 
 echo "Done all!"
