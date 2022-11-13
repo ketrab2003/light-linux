@@ -6,6 +6,10 @@ mkdir -p /home/${SETUP_USERNAME}/.config/
 rm -rf /home/${SETUP_USERNAME}/.config/awesome
 ln -s "$(pwd)/dotfiles/.config/awesome" "/home/${SETUP_USERNAME}/.config/"
 
+# create link to .Xresources
+rm -rf /home/${SETUP_USERNAME}/.Xresources
+ln -s "$(pwd)/dotfiles/.Xresources" "/home/${SETUP_USERNAME}/"
+
 # create link to .xinitrc
 rm -rf /home/${SETUP_USERNAME}/.xinitrc
 ln -s "$(pwd)/dotfiles/.xinitrc" "/home/${SETUP_USERNAME}/"
