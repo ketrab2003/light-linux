@@ -20,6 +20,7 @@ arch-chroot /mnt /bin/bash <<EOF
   cd ${SETUP_LOCATION}
 
   ./setup_awesome.sh
+  ./setup_zsh.sh
 EOF
 
 echo "Done all!"
