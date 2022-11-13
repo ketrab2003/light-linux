@@ -14,6 +14,7 @@ cp -r * /mnt/${SETUP_LOCATION}/
 arch-chroot /mnt /bin/bash <<EOF
   export SETUP_USERNAME=${SETUP_USERNAME}
   export SETUP_PASSWORD=${SETUP_PASSWORD}
+  export SETUP_LOCATION=${SETUP_LOCATION}
 
   cd ${SETUP_LOCATION}
 
