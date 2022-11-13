@@ -34,5 +34,4 @@ xorg-server
 xorg-xinit
 
 # gui apps
-code
 firefox
