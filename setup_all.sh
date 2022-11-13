@@ -19,6 +19,8 @@ arch-chroot /mnt /bin/bash <<EOF
 
   ./setup_awesome.sh
   ./setup_zsh.sh
+
+  chown -R "${SETUP_USERNAME}":"${SETUP_USERNAME}" /home/${SETUP_USERNAME}
 EOF
 
 echo "Done all!"
