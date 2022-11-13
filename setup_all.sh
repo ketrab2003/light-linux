@@ -16,6 +16,8 @@ arch-chroot /mnt /bin/bash <<EOF
   SETUP_PASSWORD=${SETUP_PASSWORD}
 
   cd ${SETUP_LOCATION}
+
+  exec ./setup_awesome.sh
 EOF
 
 echo "Done!"
