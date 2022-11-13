@@ -114,3 +114,8 @@ VI_MODE_SET_CURSOR=true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd..="cd .."
+
+# autorun for traditional autostart
+if [ -f ~/.bash_profile ]; then 
+    . ~/.bash_profile;
+fi
