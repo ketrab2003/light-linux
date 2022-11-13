@@ -8,15 +8,13 @@ export SETUP_LOCATION=/home/${SETUP_USERNAME}/system_config  # absolute path, in
 
 ./setup_system.sh
 
-# copy all installation files to new system
-mkdir -p /mnt${SETUP_LOCATION}
-cp -r * /mnt${SETUP_LOCATION}/
-
 arch-chroot /mnt /bin/bash <<EOF
   export SETUP_USERNAME=${SETUP_USERNAME}
   export SETUP_PASSWORD=${SETUP_PASSWORD}
   export SETUP_LOCATION=${SETUP_LOCATION}
 
+  mkdir -p ${SETUP_LOCATION}
+  git clone https://github.com/ketrab2003/light-linux ${SETUP_LOCATION}
   cd ${SETUP_LOCATION}
 
   ./setup_awesome.sh
