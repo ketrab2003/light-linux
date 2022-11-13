@@ -13,3 +13,5 @@ ln -s "$(pwd)/dotfiles/.xinitrc" "/home/${SETUP_USERNAME}/"
 # create link to .bash_profile
 rm -rf /home/${SETUP_USERNAME}/.bash_profile
 ln -s "$(pwd)/dotfiles/.bash_profile" "/home/${SETUP_USERNAME}/"
+
+echo "Done setting up awesome!"

@@ -9,7 +9,7 @@ exec ./setup_system.sh
 
 # copy all installation files to new system
 mkdir -p /mnt${SETUP_LOCATION}
-cp -r * /mnt/${SETUP_LOCATION}/
+cp -r * /mnt${SETUP_LOCATION}/
 
 arch-chroot /mnt /bin/bash <<EOF
   export SETUP_USERNAME=${SETUP_USERNAME}
@@ -21,5 +21,5 @@ arch-chroot /mnt /bin/bash <<EOF
   exec ./setup_awesome.sh
 EOF
 
-echo "Done!"
+echo "Done all!"
 reboot

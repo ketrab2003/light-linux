@@ -59,3 +59,5 @@ echo "${SETUP_USERNAME}:${SETUP_PASSWORD}" | chpasswd
 echo '%wheel ALL=(ALL:ALL) ALL' | EDITOR='tee -a' visudo
 
 EOF
+
+echo "Done setting up system!"
